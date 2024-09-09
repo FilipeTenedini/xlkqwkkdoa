@@ -6,12 +6,11 @@ const LaunchForm: React.FC = () => {
     <form className="w-full flex justify-center md:justify-start">
       <div className="w-full">
         <Input
-
           placeholder="Seu nome"
           className="bg-primary-t-8 h-12 border-none rounded-xl mb-2 lg:mb-4 w-full"
         />
         <Input
-
+          type="email"
           placeholder="Seu melhor e-mail"
           className="bg-primary-t-8 border-none rounded-xl mb-2 lg:mb-4"
         />

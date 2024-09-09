@@ -1,6 +1,5 @@
-import { Button } from "@/components/ui/Button";
-import { Input } from "@/components/ui/Input";
 import Image from "next/image";
+import BannerForm from "./BannerForm";
 
 const Banner: React.FC = () => {
   return (
@@ -18,15 +17,7 @@ const Banner: React.FC = () => {
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet consectetur adipisicing elit.
           </h3>
         </div>
-        <form className="w-full md:pl-4 flex justify-center md:justify-start">
-          <div className="w-full md:w-[50%] gap-2">
-            <Input placeholder="Seu primeiro nome" className="bg-primary-t-8 border-none rounded-xl mb-2 lg:mb-2"/>
-            <Input placeholder="Seu melhor e-mail" className="bg-primary-t-8 border-none rounded-xl mb-2 lg:mb-2" />
-            <Button className="w-full md:mb-2">
-              Lorem Ipsum
-            </Button>
-          </div>
-        </form>
+        <BannerForm />
       </div>
 
       <div className="hidden md:flex w-[30%] justify-end">
