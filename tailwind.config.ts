@@ -16,6 +16,7 @@ const config: Config = {
   			'primary-t-1': 'rgba(163, 141, 109, 0.1)',
   			'primary-t-5': 'rgba(163, 141, 109, 0.5)',
   			'primary-t-6': 'rgba(163, 141, 109, 0.6)',
+  			'primary-t-8': 'rgba(163, 141, 109, 0.8)',
   			card: {
   				DEFAULT: 'hsl(var(--card))',
   				foreground: 'hsl(var(--card-foreground))'
