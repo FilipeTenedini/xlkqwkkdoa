@@ -15,7 +15,7 @@ const LaunchForm: React.FC = () => {
           className="bg-primary-t-8 h-10 border-none rounded-xl mb-2 lg:mb-4"
         />
         <Button className="w-full md:mb-4 text-lg">
-          Lorem Ipsum
+          Inscreva-se Agora e Não Perca a Oportunidade
         </Button>
       </div>
     </form>
