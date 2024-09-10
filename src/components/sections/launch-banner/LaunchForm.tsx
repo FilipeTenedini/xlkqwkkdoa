@@ -7,14 +7,14 @@ const LaunchForm: React.FC = () => {
       <div className="w-full md:w-[80%]">
         <Input
           placeholder="Seu nome"
-          className="bg-primary-t-8 h-10 border-none rounded-xl mb-2 lg:mb-4 w-full"
+          className="bg-primary-t-8 h-10 border-none rounded-xl mb-2 lg:mb-4 w-full shadow-md shadow-primary-t-8 "
         />
         <Input
           type="email"
           placeholder="Seu melhor e-mail"
-          className="bg-primary-t-8 h-10 border-none rounded-xl mb-2 lg:mb-4"
+          className="bg-primary-t-8 h-10 border-none rounded-xl mb-2 lg:mb-4 shadow-md shadow-primary-t-8 "
         />
-        <Button className="w-full md:mb-4 text-lg">
+        <Button className="w-full md:mb-4 text-lg shadow-md shadow-primary-t-8 ">
           Inscreva-se Agora e Não Perca a Oportunidade
         </Button>
       </div>
