@@ -1,16 +1,17 @@
-import { FaCheck } from "react-icons/fa";
+import { ReactElement } from "react";
 
 interface Props {
   text: string
+  icon: ReactElement;
 }
 
-const LearnItem: React.FC<Props> = ({text}) => {
+const LearnItem: React.FC<Props> = ({text, icon}) => {
   return (
     <li className="flex justify-center text-primary mb-2">
       <div className="w-full px-4">
         <div className="flex md:text-lg">
-          <div className="w-[12px] mr-2 mt-0.5 md:mt-2">
-            <FaCheck className="text-primary text-xs" />
+          <div className="w-[28px] mt-0.5 md:mt-1">
+            {icon}
           </div>
           {text}
         </div>

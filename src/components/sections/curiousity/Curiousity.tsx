@@ -11,7 +11,7 @@ const Curiousity: React.FC = () => {
           E agora, você tem a chance de aprender como aplicá-las com perfeição e <span className="text-yellow-950">transformar a sua carreira!</span>
         </span>
         <span>
-          Na <span className="font-bold text-yellow-950">live exclusiva de lançamento</span> do meu curso DESCOMPLICANDO LENTES DE RESINA, vou te mostrar os segredos por trás dos resultados impecáveis e naturais que eu tenho alcançado ao longo dos anos – sem desgastar os dentes dos seus pacientes!
+          Na <span className="font-bold text-yellow-950">live exclusiva de lançamento</span> do meu curso <span className="text-yellow-950">DESCOMPLICANDO LENTES DE RESINA</span>, vou te mostrar os segredos por trás dos resultados impecáveis e naturais que eu tenho alcançado ao longo dos anos – sem desgastar os dentes dos seus pacientes!
         </span>
         <Button
           className="w-full mt-4 font-bold md:text-lg md:mb-1 shadow-sm shadow-primary-t-8 md:h-11 bg-yellow-950"

@@ -15,7 +15,7 @@ const LaunchBanner: React.FC = () => {
         <h2 className="text-2xl font-bold mb-4 md:mb-6 text-primary text-center px-4">
             Essa Live Vai mudar o seu mindset e Transformar Seu Consultório – <span className="text-yellow-900">E é 100% Gratuita!</span>
         </h2>
-        <div className="text-primary px-8 lg:max-w-[50%] flex flex-col items-start text-yellow-900">
+        <div className="px-8 lg:max-w-[50%] flex flex-col items-start text-yellow-900">
           <span className="mb-2 md:mb-3 md:text-lg">
             A live de lançamento do curso foi pensada para trazer valor real e prático para a sua rotina como dentista. Durante a transmissão, você vai descobrir como as lentes de resina podem transformar sorrisos de forma simples e eficaz, gerando resultados incríveis para seus pacientes e aumentando significativamente seu faturamento.
           </span>
@@ -27,7 +27,7 @@ const LaunchBanner: React.FC = () => {
           </span>
         </div>
         <div className="px-4 w-full flex justify-center mt-4 z-20">
-          <Button className="w-full max-w-[550px] font-bold md:text-lg md:mb-2 shadow-sm shadow-primary-t-8 md:h-11 bg-yellow-950" variant={"inverted"}>
+          <Button className="w-full mb-6 max-w-[550px] font-bold md:text-lg md:mb-2 shadow-sm shadow-primary-t-8 md:h-11 bg-yellow-950" variant={"inverted"}>
               INSCREVA-SE AGORA E NÃO PERCA A OPORTUNIDADE
           </Button>
         </div>
