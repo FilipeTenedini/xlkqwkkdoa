@@ -9,8 +9,8 @@ export default function Home() {
     <div className="w-full flex flex-col items-center justify-center">
       <Banner />
       <Curiousity />
-      <Learn />
       <WhoAmI />
+      <Learn />
       <LaunchBanner />
     </div>
   );
