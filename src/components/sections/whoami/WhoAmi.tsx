@@ -16,7 +16,7 @@ const WhoAmI: React.FC = () => {
       </div>
       <div className="w-full text-center xl:text-left xl:w-[40%] p-0 flex flex-col justfiy-center xl:justify-between">
         <div className="flex flex-col items-center">
-          <h2 className="text-primary-t-6 text-2xl mb-1 lg:mb-4">
+          <h2 className="text-primary text-2xl mb-1 lg:mb-4">
             <strong>Quem é TAÍS AURICH?</strong>
           </h2>
           <div className="text-primary mb-3 w-full max-w-[700px]">

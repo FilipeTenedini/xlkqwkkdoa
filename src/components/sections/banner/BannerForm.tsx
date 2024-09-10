@@ -15,8 +15,8 @@ const BannerForm: React.FC = () => {
           type="email"
           className="bg-primary-t-4 border-none rounded-xl mb-2 lg:mb-2 shadow-md shadow-primary-t-8 text-center md:h-11"
         />
-        <Button className="w-full font-bold md:text-lg md:mb-2 shadow-sm shadow-primary-t-8 md:h-11" variant={"inverted"}>
-          Inscreva-se Agora
+        <Button className="w-full font-bold md:text-lg md:mb-2 shadow-sm shadow-primary-t-8 md:h-11 bg-yellow-950" variant={"inverted"}>
+          INSCREVA-SE AGORA
         </Button>
       </div>
     </form>
