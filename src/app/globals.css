@@ -1,3 +1,4 @@
+/* globals.css */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -24,6 +25,11 @@ body {
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+
+  /* Classe global para transições suaves */
+  .transition-all {
+    transition: all 0.3s ease-in-out; /* Ajuste a duração e a função de tempo conforme necessário */
   }
 }
 

@@ -4,13 +4,13 @@ import Image from "next/image";
 const LaunchBanner: React.FC = () => {
   return (
     <div className="relative w-full flex">
-        <Image
-          src="/images/clareamento2.jpg"
-          layout="fill"
-          objectFit="cover"
-          className="absolute inset-0 opacity-20"
-          alt="Banner Image"
-          />
+      <Image
+        src="/images/clareamento2.jpg"
+        layout="fill"
+        objectFit="cover"
+        className="absolute inset-0 opacity-20"
+        alt="Banner Image"
+        />
       <div className="w-full flex flex-col items-center justify-center">
         <h2 className="text-2xl font-bold mb-4 md:mb-6 text-primary text-center px-4">
             Essa Live Vai mudar o seu mindset e Transformar Seu Consultório – <span className="text-yellow-900">E é 100% Gratuita!</span>
@@ -26,7 +26,7 @@ const LaunchBanner: React.FC = () => {
             Essa é uma oportunidade única de estar à frente no mercado odontológico, dominando uma técnica em alta demanda.
           </span>
         </div>
-        <div className="px-4 w-full flex justify-center mt-4">
+        <div className="px-4 w-full flex justify-center mt-4 z-20">
           <Button className="w-full max-w-[550px] font-bold md:text-lg md:mb-2 shadow-sm shadow-primary-t-8 md:h-11 bg-yellow-950" variant={"inverted"}>
               INSCREVA-SE AGORA E NÃO PERCA A OPORTUNIDADE
           </Button>
