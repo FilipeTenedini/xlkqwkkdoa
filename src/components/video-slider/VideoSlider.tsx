@@ -4,22 +4,22 @@ import { GrCaretNext } from "react-icons/gr";
 
 const videos = [
   {
-    src: "/videos/comp/one.mp4",
+    src: "/videos/one.mp4",
     poster: "",
     type: "video/mp4"
   },
   {
-    src: "/videos/comp/two.mp4",
+    src: "/videos/two.mp4",
     poster: "",
     type: "video/mp4"
   },
   // {
-  //   src: "/videos/comp/three.mp4",
+  //   src: "/videos/three.mp4",
   //   poster: "",
   //   type: "video/mp4"
   // },
   {
-    src: "/videos/comp/four.mp4",
+    src: "/videos/four.mp4",
     poster: "",
     type: "video/mp4"
   },
