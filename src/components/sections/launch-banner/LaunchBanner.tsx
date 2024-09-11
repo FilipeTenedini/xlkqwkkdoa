@@ -33,7 +33,7 @@ const LaunchBanner: React.FC = () => {
         </div>
         <div className="px-4 w-full flex justify-center mt-4 z-20">
           <Button
-            className="w-full mb-6 max-w-[550px] font-bold text-xs md:text-md md:text-lg md:mb-2 shadow-sm shadow-black/30 md:h-11 bg-gray-600"
+            className="w-full mb-6 max-w-[550px] font-bold text-xs md:text-md md:text-lg md:mb-2 shadow-sm shadow-black/30 md:h-11 bg-primary"
             variant={"inverted"}
           >
             INSCREVA-SE AGORA E NÃO PERCA A OPORTUNIDADE

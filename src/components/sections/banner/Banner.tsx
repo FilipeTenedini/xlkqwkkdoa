@@ -17,13 +17,13 @@ const Banner: React.FC = () => {
               <div className="text-xl mb-2">03/10 às 20:00</div>
             </div>
             <BannerText />
-            <BannerForm buttonColor="bg-gray-900" />
+            <BannerForm />
           </div>
         </div>
       </div>
       <div className="xl:hidden text-black block w-full bg-gray-100 py-4 px-4">
         <BannerText />
-        <BannerForm buttonColor="bg-gray-900" />
+        <BannerForm />
       </div>
     </>
   );

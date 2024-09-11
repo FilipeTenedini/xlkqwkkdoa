@@ -9,7 +9,7 @@ const Learn: React.FC = () => {
       </h1>
       <LearnInfos />
       <Button
-        className="w-[80%] max-w-[400px] font-bold md:text-lg md:mb-2 shadow-sm shadow-black/30 md:mt-5 md:h-11 bg-gray-600"
+        className="w-[80%] max-w-[400px] font-bold md:text-lg md:mb-2 shadow-sm shadow-black/30 md:mt-5 md:h-11 bg-primary"
         variant={"inverted"}
       >
         GARANTA SEU LUGAR NA LIVE

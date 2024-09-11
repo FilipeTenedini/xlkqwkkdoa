@@ -12,7 +12,7 @@ const config: Config = {
       colors: {
         background: 'hsl(var(--background))',
         foreground: 'hsl(var(--foreground))',
-        primary: "#a38d6d",
+        primary: "#b6ab7d",
         'primary-t-1': 'rgba(163, 141, 109, 0.1)',
         'primary-t-4': 'rgba(163, 141, 109, 0.4)',
         'primary-t-5': 'rgba(163, 141, 109, 0.5)',

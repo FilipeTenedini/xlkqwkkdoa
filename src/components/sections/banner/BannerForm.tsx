@@ -1,11 +1,7 @@
 import { Button } from "@/components/ui/Button";
 import { Input } from "@/components/ui/Input";
 
-interface Props {
-  buttonColor: string;
-}
-
-const BannerForm: React.FC<Props> = ({ buttonColor }) => {
+const BannerForm: React.FC = () => {
   return (
     <form className="w-full h-full flex justify-center px-4">
       <div className="w-full md:w-[100%] max-w-[700px] flex flex-col items-center gap-2 xl:gap-3">
@@ -21,7 +17,7 @@ const BannerForm: React.FC<Props> = ({ buttonColor }) => {
         />
 
         <Button
-          className={`w-full font-bold md:text-lg shadow-sm shadow-black/20 h-9 ${buttonColor}`}
+          className={`w-full font-bold md:text-lg shadow-sm shadow-black/20 h-9 bg-primary`}
           variant={"inverted"}
         >
           INSCREVA-SE AGORA
