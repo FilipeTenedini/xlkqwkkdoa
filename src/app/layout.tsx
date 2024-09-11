@@ -39,6 +39,10 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <link rel="icon" href="/images/image.png" type="image/png" />
+        <link
+          rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap"
+        />
       </head>
       <body
         className={`${geistSans.variable} ${cinzelSb.variable} ${cinzel.variable} ${geistMono.variable} bg-white antialiased`}

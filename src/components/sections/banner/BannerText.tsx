@@ -8,7 +8,7 @@ const BannerText: React.FC = () => {
       <div>Participe da live exclusiva de lançamento do meu curso online:</div>
       <div>
         Descomplicando Lentes de Resina e veja como você vai aprender a dominar
-        as técicas que estão revolucionando o mercado odontológico!
+        as técnicas que estão revolucionando o mercado odontológico!
       </div>
     </div>
   );
