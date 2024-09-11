@@ -7,17 +7,17 @@ const videos = [
   {
     src: "/videos/one.mp4",
     poster: "",
-    type: "video/mp4"
+    type: "video/mp4",
   },
   {
     src: "/videos/two.mp4",
     poster: "",
-    type: "video/mp4"
+    type: "video/mp4",
   },
   {
     src: "/videos/four.mp4",
     poster: "",
-    type: "video/mp4"
+    type: "video/mp4",
   },
 ];
 
@@ -42,8 +42,8 @@ export default function VideoSlider() {
   const handleVideoChange = () => {
     if (videoRef.current) {
       videoRef.current.load();
-      videoRef.current.play().catch(error => {
-        console.error('Playback failed', error);
+      videoRef.current.play().catch((error) => {
+        console.error("Playback failed", error);
       });
     }
   };
@@ -54,7 +54,9 @@ export default function VideoSlider() {
 
   return (
     <div className="relative w-full max-w-[568px] h-96 mx-auto">
-      <div className="relative overflow-hidden h-full pb-[56.25%]"> {/* Proporção 16:9 */}
+      <div className="relative overflow-hidden h-full pb-[56.25%]">
+        {" "}
+        {/* Proporção 16:9 */}
         <div className="absolute inset-0 h-full">
           <video
             ref={videoRef}
@@ -67,7 +69,10 @@ export default function VideoSlider() {
             className="w-full h-full object-fit"
             onEnded={handleNext}
           >
-            <source src={videos[currentVideo].src} type={videos[currentVideo].type} />
+            <source
+              src={videos[currentVideo].src}
+              type={videos[currentVideo].type}
+            />
             Your browser does not support the video tag.
           </video>
         </div>
@@ -77,7 +82,7 @@ export default function VideoSlider() {
         onClick={handlePrev}
         className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-black rounded-full bg-opacity-50 text-white p-2 z-10"
       >
-        <GrCaretNext className="rotate-180"/>
+        <GrCaretNext className="rotate-180" />
       </button>
 
       <button

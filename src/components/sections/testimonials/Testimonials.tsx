@@ -10,9 +10,9 @@ const Testimonials: React.FC = () => {
         Dentistas que já transformaram suas carreiras com lentes de resina!
       </h3>
       <div className="mb-2">
-        Depois de ministrar <span className="font-semibold">15 edições</span> do curso presencialmente, resolvemos
-        trazer essa experiência para o formato digital e alcançar ainda mais
-        dentistas!
+        Depois de ministrar <span className="font-semibold">15 edições</span> do
+        curso presencialmente, resolvemos trazer essa experiência para o formato
+        digital e alcançar ainda mais dentistas!
       </div>
       <div className="mb-5">
         Confira alguns depoimentos de quem já participou e está colhendo os

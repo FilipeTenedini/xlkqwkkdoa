@@ -20,7 +20,10 @@ const BannerForm: React.FC<Props> = ({ buttonColor }) => {
           className="hidden 2xl:block bg-gray-300 border-none rounded-xl shadow-md shadow-black/30 text-center h-9"
         />
 
-        <Button className={`w-full font-bold md:text-lg shadow-sm shadow-black/20 h-9 ${buttonColor}`} variant={"inverted"}>
+        <Button
+          className={`w-full font-bold md:text-lg shadow-sm shadow-black/20 h-9 ${buttonColor}`}
+          variant={"inverted"}
+        >
           INSCREVA-SE AGORA
         </Button>
       </div>
