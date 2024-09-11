@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/Button";
 
 const LaunchBanner: React.FC = () => {
   return (
-    <div className="relative w-full flex bg-primary-t-1 py-4">
+    <div className="relative w-full flex py-4">
       <div className="w-full flex flex-col items-center justify-center">
         <h2 className="text-2xl font-bold mb-4 md:mb-6 text-primary text-center px-4 lg:max-w-[65%]">
           A LIVE DE LANÇAMENTO do curso DESCOMPLICANDO LENTES DE RESINA vai mudar o seu mindset e Transformar Seu Consultório -
