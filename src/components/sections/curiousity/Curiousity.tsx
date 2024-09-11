@@ -41,7 +41,7 @@ const Curiousity: React.FC = () => {
             </div>
           </div>
           <Button
-            className="w-full mt-4 mb-2 font-bold md:text-lg md:mb-1 max-w-[300px] shadow-sm shadow-primary-t-8 md:h-11 bg-gray-600"
+            className="w-full mt-4 mb-2 font-bold md:text-lg md:mb-1 max-w-[300px] shadow-sm shadow-black/30 md:h-11 bg-gray-600"
             variant={"inverted"}
           >
             INSCREVA-SE AGORA
