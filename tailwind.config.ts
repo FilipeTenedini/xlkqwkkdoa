@@ -54,7 +54,8 @@ const config: Config = {
         }
       },
       fontFamily: {
-        cinzel: ['var(--font-cinzel)', 'serif']
+        cinzel: ['var(--font-cinzel)', 'serif'],
+        cinzelSb: ['var(--font-cinzel-sb)', 'serif']
       },
       borderRadius: {
         lg: 'var(--radius)',

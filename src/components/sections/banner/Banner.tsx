@@ -1,34 +1,25 @@
-import Image from "next/image";
 import BannerForm from "./BannerForm";
+import BannerImage from "./BannerImage";
 
 const Banner: React.FC = () => {
   return (
-    <div className="bg-primary-t-6 w-[80%] rounded-tr-2xl rounded-bl-2xl mt-4 p-4 md:p-0 flex flex-row text-white mb-4">
-      <div className="w-full md:w-[50%] flex flex-col justify-center items-center px-2">
-        <span className="text-center font-cinzel border-white border-y text-3xl py-2 px-4 mb-2 sm:mb-5 md:mb-5 md:mt-2 lg:mb-10 md:text-4xl lg:text-5xl">
-          Taís Aurich
+    <div className="bg-primary-t-6 w-full flex flex-row text-white">
+      <div className="hidden lg:flex md:w-[45%] flex-col items-center p-6">
+        <div className="text-2xl mb-1">Live de Lançamento Curso:</div>
+        <span className="font-cinzelSb text-center text-3xl font-semibold">
+          DESCOMPLICANDO LENTES <br/> DE RESINA
         </span>
-
-        <div className="mb-2 sm:mb-5 md:mb-5 lg:mb-10">
-          <h2 className="text-center md:text-left md:pl-4 lg:text-xl font-bold mb-4">
-            Descubra o Segredo para Transformar Sorrisos e Sua Carreira com Lentes de Resina!
-          </h2>
-          <h3 className="text-center md:text-left md:pl-4 lg:text-lg">
-          Participe da minha live exclusiva e aprenda como dominar as técnicas que estão revolucionando o mercado odontológico.
-          </h3>
+        <div className="text-xl mb-4">03/10 às 20:00</div>
+        <div className="text-center text-lg gap-y-2 flex flex-col mb-4">
+          <div className="">Descubra o segredo para Transformar Sorrisos e Sua Carreira com Lentes de Resina!</div>
+          <div className="">Participe da live exclusiva de lançamento do meu curso online:</div>
+          <div className="">
+            Descomplicando Lentes de Resina e veja como você vai aprender a dominar as técicas que estão revolucionando o mercado odontológico!
+          </div>
         </div>
         <BannerForm />
       </div>
-
-      <div className="hidden md:flex w-[50%] justify-end">
-        <Image
-          src={"/images/ban.jpg"}
-          width={855}
-          height={500}
-          className="rounded-tr-2xl"
-          alt="Clinic Dr Banner Image"
-        />
-      </div>
+      <BannerImage />
     </div>
   );
 };

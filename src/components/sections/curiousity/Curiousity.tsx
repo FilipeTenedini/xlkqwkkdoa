@@ -8,14 +8,17 @@ const Curiousity: React.FC = () => {
           <div className="lg:flex lg:items-start flex-col w-full mb-3 lg:mb-0">
             <span className="mb-2">
               Você sabia que as lentes de resina são uma das técnicas mais procuradas na odontologia estética?
+              E agora, você tem a chance de aprender como aplicá-las com perfeição e <span className="text-yellow-950">transformar a sua carreira!</span>
             </span>
             <span className="mb-2">
-              E agora, você tem a chance de aprender como aplicá-las com perfeição e <span className="text-yellow-950">transformar a sua carreira!</span>
+            As <span className="text-yellow-950">lentes de resina</span> são extremamente versáteis, oferecendo alta durabilidade e resultados estéticos impecáveis. Além disso, uma grande vantagem dessa técnica é que ela
+            <span className="text-yellow-950">não desgasta os dentes naturais</span>, sendo uma solução reversível a qualquer momento, garantindo segurança e tranquilidade para o paciente.
             </span>
           </div>
           <div className="w-full">
             <span>
-              Na <span className="font-bold text-yellow-950">live exclusiva de lançamento</span> do meu curso <span className="text-yellow-950">DESCOMPLICANDO LENTES DE RESINA</span>, vou te mostrar os segredos por trás dos resultados impecáveis e naturais que eu tenho alcançado ao longo dos anos – sem desgastar os dentes dos seus pacientes!
+              Na <span className="font-bold text-yellow-950">live exclusiva de lançamento</span> do
+              <span className="text-yellow-950">DESCOMPLICANDO LENTES DE RESINA</span>, vou te mostrar os segredos por trás dos resultados naturais e duradouros que eu tenho alcançado ao longo dos anos.
             </span>
           </div>
         </div>

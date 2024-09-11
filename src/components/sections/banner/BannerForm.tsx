@@ -4,7 +4,7 @@ import { Input } from "@/components/ui/Input";
 const BannerForm: React.FC = () => {
   return (
     <form className="w-full md:p-4 flex justify-center">
-      <div className="w-full md:w-[100%] max-w-[700px] gap-2">
+      <div className="w-full md:w-[100%] max-w-[700px] flex flex-col gap-3">
       <Input
         placeholder="Seu primeiro nome"
         className="bg-primary-t-4 border-none rounded-xl mb-2 lg:mb-2 shadow-md shadow-primary-t-8 text-center md:h-11"
