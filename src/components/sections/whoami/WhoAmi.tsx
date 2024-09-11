@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const WhoAmI: React.FC = () => {
   return (
-    <div className="w-full bg-primary-t-1 flex flex-col xl:flex-row justify-center p-10 mb-5">
+    <div className="w-full flex flex-col xl:flex-row justify-center p-10 mb-5">
       <div className="mr-3 flex justify-center mb-2 xl:mb-0 xl:block lg:mr-12">
         <div className="p-1 border rounded-lg w-[250px] lg:w-[350px] border-primary">
           <Image

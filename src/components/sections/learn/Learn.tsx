@@ -3,7 +3,7 @@ import LearnInfos from "./LearnInfos/LearnInfos";
 
 const Learn: React.FC = () => {
   return (
-    <div className="mb-4 flex flex-col items-center">
+    <div className="bg-primary-t-1 py-3 w-full mb-4 flex flex-col items-center">
       <h1 className="text-primary font-bold mb-2 text-center w-full px-4 text-2xl md:text-4xl md:mb-5">
         O que você vai aprender na live?
       </h1>

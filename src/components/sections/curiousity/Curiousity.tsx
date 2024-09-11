@@ -40,15 +40,14 @@ const Curiousity: React.FC = () => {
               longo dos anos!
             </div>
           </div>
+          <Button
+            className="w-full mt-4 mb-2 font-bold md:text-lg md:mb-1 max-w-[300px] shadow-sm shadow-primary-t-8 md:h-11 bg-yellow-950"
+            variant={"inverted"}
+          >
+            INSCREVA-SE AGORA
+          </Button>
         </div>
       </div>
-
-      <Button
-        className="w-full mt-4 mb-2 font-bold md:text-lg md:mb-1 max-w-[300px] shadow-sm shadow-primary-t-8 md:h-11 bg-yellow-950"
-        variant={"inverted"}
-      >
-        INSCREVA-SE AGORA
-      </Button>
     </div>
   );
 };
