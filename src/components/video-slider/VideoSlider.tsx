@@ -13,11 +13,6 @@ const videos = [
     poster: "",
     type: "video/mp4"
   },
-  // {
-  //   src: "/videos/three.mp4",
-  //   poster: "",
-  //   type: "video/mp4"
-  // },
   {
     src: "/videos/four.mp4",
     poster: "",
