@@ -10,7 +10,7 @@ const LaunchBanner: React.FC = () => {
         </h2>
         <div className="px-8 lg:max-w-[50%] flex flex-col items-start text-yellow-900">
           <span className="mb-2 md:mb-3 md:text-lg">
-          <span className="text-yellow-900">A live de lançamento do curso</span>
+          <span className="text-yellow-900">A live de lançamento do curso </span>
              foi pensada para trazer valor real e prático para a sua rotina como dentista. Durante a transmissão, você vai descobrir como as lentes de resina podem transformar sorrisos de forma simples e eficaz, gerando resultados incríveis para seus pacientes e aumentando significativamente seu faturamento.
           </span>
           <span className="mb-2 md:mb-3 md:text-lg">
