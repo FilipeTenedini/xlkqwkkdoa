@@ -3,15 +3,15 @@ import Carousel from "../carousel/Carousel";
 
 const Curiousity: React.FC = () => {
   return (
-    <div className="w-full flex items-center flex-col mb-4 p-4">
-      <h1 className="text-primary font-bold mb-3 text-center w-full px-4 text-2xl md:text-4xl md:mb-5">
+    <div className="w-full flex items-center flex-col mb-4 p-4 text-black">
+      <h1 className="font-bold mb-3 text-center w-full px-4 text-2xl md:text-4xl md:mb-5">
         Por que aprender Lentes de resina?
       </h1>
       <div className="w-[80%] flex flex-col items-center gap-6 sm:flex-row">
         <div className="w-full sm:w-[50%] lg:w-[30%]">
           <Carousel />
         </div>
-        <div className="text-primary flex flex-col items-center text-center w-full sm:w-[50%] lg:w-[75%]">
+        <div className="flex flex-col items-center text-center w-full sm:w-[50%] lg:w-[75%]">
           <div className="lg:w-[80%] flex flex-col gap-y-2 lg:text-lg">
             <div>
               Você sabia que as lentes de resina são uma das técnicas mais
@@ -41,7 +41,7 @@ const Curiousity: React.FC = () => {
             </div>
           </div>
           <Button
-            className="w-full mt-4 mb-2 font-bold md:text-lg md:mb-1 max-w-[300px] shadow-sm shadow-primary-t-8 md:h-11 bg-yellow-950"
+            className="w-full mt-4 mb-2 font-bold md:text-lg md:mb-1 max-w-[300px] shadow-sm shadow-primary-t-8 md:h-11 bg-gray-600"
             variant={"inverted"}
           >
             INSCREVA-SE AGORA
