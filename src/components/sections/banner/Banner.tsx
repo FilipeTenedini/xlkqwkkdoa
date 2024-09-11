@@ -5,7 +5,7 @@ import BannerText from "./BannerText";
 const Banner: React.FC = () => {
   return (
     <>
-    <div className="bg-primary-t-6 w-full h-full flex flex-row items-center justify-center text-white">
+    <div className="bg-gray-100 w-full h-full flex flex-row items-center justify-center text-black">
       <BannerImage />
       <div className="hidden xl:flex md:w-[45%] flex-col w-full h-full p-1">
         <div className="w-full h-full flex flex-col mt-3">
@@ -17,7 +17,7 @@ const Banner: React.FC = () => {
             <div className="text-xl mb-2">03/10 às 20:00</div>
           </div>
           <BannerText />
-          <BannerForm buttonColor="bg-yellow-950"/>
+          <BannerForm buttonColor="bg-gray-900"/>
         </div>
       </div>
     </div>

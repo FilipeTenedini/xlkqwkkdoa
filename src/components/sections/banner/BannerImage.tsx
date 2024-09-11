@@ -12,7 +12,7 @@ const BannerImage: React.FC = () => {
         alt="Clinic Dr Banner Image"
         />
         <div className="absolute bottom-3 left-6 p-4">
-          <h2 className="text-xl md:text-4xl xl:text-3xl font-bold font-cinzel">
+          <h2 className="text-xl text-white md:text-4xl xl:text-3xl font-bold font-cinzel">
             03/10 às 20:00
           </h2>
         </div>
