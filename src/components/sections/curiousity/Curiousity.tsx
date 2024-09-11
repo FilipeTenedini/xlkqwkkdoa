@@ -12,7 +12,7 @@ const Curiousity: React.FC = () => {
           <Carousel />
         </div>
         <div className="text-primary flex flex-col items-center text-center w-full sm:w-[50%] lg:w-[75%]">
-          <div className="lg:w-[80%] flex flex-col gap-y-2">
+          <div className="lg:w-[80%] flex flex-col gap-y-2 lg:text-lg">
             <div>
               Você sabia que as lentes de resina são uma das técnicas mais
               procuradas na odontologia estética? E agora, você tem a chance de
