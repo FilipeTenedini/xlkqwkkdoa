@@ -24,7 +24,6 @@ const videos = [
 export default function VideoSlider() {
   const videoRef = useRef<HTMLVideoElement>(null);
   const [currentVideo, setCurrentVideo] = useState(0);
-  const [videoLoaded, setVideoLoaded] = useState(false);
 
   const handlePrev = () => {
     setCurrentVideo((prev) => {
