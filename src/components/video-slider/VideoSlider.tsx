@@ -1,4 +1,5 @@
 "use client";
+
 import { useEffect, useRef, useState } from "react";
 import { GrCaretNext } from "react-icons/gr";
 
@@ -23,6 +24,7 @@ const videos = [
 export default function VideoSlider() {
   const videoRef = useRef<HTMLVideoElement>(null);
   const [currentVideo, setCurrentVideo] = useState(0);
+  const [videoLoaded, setVideoLoaded] = useState(false);
 
   const handlePrev = () => {
     setCurrentVideo((prev) => {
@@ -41,7 +43,9 @@ export default function VideoSlider() {
   const handleVideoChange = () => {
     if (videoRef.current) {
       videoRef.current.load();
-      videoRef.current.play();
+      videoRef.current.play().catch(error => {
+        console.error('Playback failed', error);
+      });
     }
   };
 
@@ -58,7 +62,8 @@ export default function VideoSlider() {
             key={videos[currentVideo].src}
             controls
             playsInline
-            autoPlay
+            autoPlay={false} // Inicialmente não auto-play
+            muted // Necessário para autoplay em alguns navegadores
             poster={videos[currentVideo].poster}
             className="w-full h-full object-fit"
             onEnded={handleNext}
