@@ -4,9 +4,9 @@ import Carousel from "../carousel/Carousel";
 const Curiousity: React.FC = () => {
   return (
     <div className="w-full flex items-center flex-col mb-4 p-4">
-      <div className="font-bold text-primary text-md md:text-xl lg:text-2xl text-center mb-3">
-        Por que Lentes de resina?
-      </div>
+      <h1 className="text-primary font-bold mb-3 text-center w-full px-4 text-2xl md:text-4xl md:mb-5">
+        Por que aprender Lentes de resina?
+      </h1>
       <div className="w-[80%] flex flex-col items-center gap-6 sm:flex-row">
         <div className="w-full sm:w-[50%] lg:w-[30%]">
           <Carousel />
