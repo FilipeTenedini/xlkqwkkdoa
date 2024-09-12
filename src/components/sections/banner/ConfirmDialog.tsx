@@ -16,7 +16,7 @@ interface Props {
   setOpen: (open: boolean) => void;
 }
 
-const ConfirmDialog: React.FC<Props> = ({open, setOpen}) => {
+const ConfirmDialog: React.FC<Props> = ({ open, setOpen }) => {
   return (
     <div className="absolute w-full">
       <Dialog open={open} onOpenChange={() => setOpen(false)}>
@@ -37,8 +37,11 @@ const ConfirmDialog: React.FC<Props> = ({open, setOpen}) => {
           </span>
           <Button
             type="submit"
-            className={`w-full font-bold md:text-lg shadow-sm shadow-black/30 h-9 bg-primary`}
+            className="w-full font-bold md:text-lg shadow-sm shadow-black/30 h-9 bg-primary"
             variant={"inverted"}
+            onClick={() => {
+              window.open("https://joinz.app/grupoviptaisaurich", "_blank");
+            }}
           >
             <FaWhatsapp className="mr-4" />
             CONFIRMAR INSCRIÇÃO NO WHATSAPP
