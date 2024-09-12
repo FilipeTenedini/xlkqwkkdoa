@@ -1,60 +1,60 @@
 "use client";
 
-import React from 'react';
-import { useForm } from 'react-hook-form';
-import { yupResolver } from '@hookform/resolvers/yup';
-import * as yup from 'yup';
+import React, { useState } from "react";
 import { Button } from "@/components/ui/Button";
 import { Input } from "@/components/ui/Input";
-
-// Definindo o esquema de validação com yup
-const schema = yup.object({
-  firstName: yup.string().required('Seu primeiro nome é obrigatório'),
-  email: yup.string().email('Email inválido').required('Seu melhor e-mail é obrigatório'),
-}).required();
-
-type FormValues = {
-  firstName: string;
-  email: string;
-};
+import { FormValues } from "@/context/types";
+import { useFormContext } from "@/context/FormContext";
+import ConfirmDialog from "./ConfirmDialog";
 
 const BannerForm: React.FC = () => {
-  const { register, handleSubmit, formState: { errors } } = useForm<FormValues>({
-    resolver: yupResolver(schema),
-  });
+  const { form } = useFormContext();
+  const [open, setOpen] = useState(false);
 
   const onSubmit = (data: FormValues) => {
-    console.log(data);
+    if (data.email && data.firstName) {
+      setOpen(true);
+    }
   };
 
   return (
-    <form
-      className="w-full h-full flex justify-center px-4"
-      onSubmit={handleSubmit(onSubmit)}
-    >
-      <div className="w-full md:w-[100%] max-w-[700px] flex flex-col items-center gap-2 xl:gap-3">
-        <Input
-          {...register('firstName')}
-          placeholder="Seu primeiro nome"
-          className={`2xl:block bg-gray-300 rounded-xl shadow-md shadow-black/30 text-center h-9 ${errors.firstName ? 'border-red-500 text-red-500' : 'border-none '}`}
-        />
-
-        <Input
-          {...register('email')}
-          placeholder="Seu melhor e-mail"
-          type="email"
-          className={`2xl:block bg-gray-300 rounded-xl shadow-md shadow-black/30 text-center h-9 ${errors.email ? 'border-red-500 text-red-500' : 'border-none '}`}
-        />
-
-        <Button
-          type="submit"
-          className={`w-full font-bold md:text-lg shadow-sm shadow-black/30 h-9 bg-primary`}
-          variant={"inverted"}
-        >
-          INSCREVA-SE AGORA
-        </Button>
-      </div>
-    </form>
+    <div className="relative">
+      <form
+        className="w-full h-full flex justify-center px-4"
+        onSubmit={form.handleSubmit(onSubmit)}
+      >
+        <div className="w-full max-w-[700px] flex flex-col items-center gap-2 xl:gap-3">
+          <Input
+            {...form.register("firstName")}
+            placeholder="Seu primeiro nome"
+            className={`bg-gray-300 rounded-xl shadow-md shadow-black/30 text-center h-9 ${
+              form.formState.errors.firstName
+                ? "border-red-500 text-red-500"
+                : "border-none"
+            }`}
+            onChange={(e) => form.setValue("firstName", e.target.value.trim())}
+          />
+          <Input
+            {...form.register("email")}
+            placeholder="Seu melhor e-mail"
+            type="email"
+            className={`bg-gray-300 rounded-xl shadow-md shadow-black/30 text-center h-9 ${
+              form.formState.errors.email
+                ? "border-red-500 text-red-500"
+                : "border-none"
+            }`}
+            onChange={(e) => form.setValue("email", e.target.value.trim())}
+          />
+          <Button
+            className="w-full font-bold md:text-lg shadow-sm shadow-black/30 h-9 bg-primary"
+            variant="inverted"
+          >
+            INSCREVA-SE AGORA
+          </Button>
+        </div>
+      </form>
+      <ConfirmDialog open={open} setOpen={setOpen} />
+    </div>
   );
 };
 

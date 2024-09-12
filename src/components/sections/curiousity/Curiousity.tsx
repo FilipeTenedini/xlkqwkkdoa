@@ -1,7 +1,14 @@
+"use client";
+
+import React from "react";
 import { Button } from "@/components/ui/Button";
 import Carousel from "../carousel/Carousel";
+import { useFormContext } from "@/context/FormContext"; // Importa o hook do contexto
+import scrollToTop from "@/app/utils/scroll-to-top"; // Importa a função de rolar para o formulário
 
 const Curiousity: React.FC = () => {
+  const { formContainerRef } = useFormContext(); // Obtém a ref do contexto
+
   return (
     <div className="w-full flex items-center flex-col mb-4 p-4 text-black">
       <h1 className="font-bold mb-3 text-center w-full px-4 text-2xl md:text-4xl md:mb-5">
@@ -43,6 +50,7 @@ const Curiousity: React.FC = () => {
           <Button
             className="w-full mt-4 mb-2 font-bold md:text-lg md:mb-1 max-w-[300px] shadow-sm shadow-black/30 md:h-11 bg-primary"
             variant={"inverted"}
+            onClick={() => scrollToTop(formContainerRef)}
           >
             INSCREVA-SE AGORA
           </Button>
@@ -51,5 +59,6 @@ const Curiousity: React.FC = () => {
     </div>
   );
 };
+
 
 export default Curiousity;

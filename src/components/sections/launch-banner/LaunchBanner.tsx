@@ -1,6 +1,11 @@
+import scrollToTop from "@/app/utils/scroll-to-top";
 import { Button } from "@/components/ui/Button";
+import { useFormContext } from "@/context/FormContext";
 
 const LaunchBanner: React.FC = () => {
+  const { formContainerRef } = useFormContext(); // Obtém a ref do contexto
+
+
   return (
     <div className="relative w-full flex py-4 text-black">
       <div className="w-full flex flex-col items-center justify-center">
@@ -35,6 +40,7 @@ const LaunchBanner: React.FC = () => {
           <Button
             className="w-full mb-6 max-w-[550px] font-bold text-xs md:text-md md:text-lg md:mb-2 shadow-sm shadow-black/30 md:h-11 bg-primary"
             variant={"inverted"}
+            onClick={() => scrollToTop(formContainerRef)}
           >
             INSCREVA-SE AGORA E NÃO PERCA A OPORTUNIDADE
           </Button>
