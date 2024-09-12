@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
+import axios from "axios"; // Importa o Axios
 import { Button } from "@/components/ui/Button";
 import { Input } from "@/components/ui/Input";
 import { FormValues } from "@/context/types";
@@ -11,9 +12,26 @@ const BannerForm: React.FC = () => {
   const { form } = useFormContext();
   const [open, setOpen] = useState(false);
 
-  const onSubmit = (data: FormValues) => {
+  const onSubmit = async (data: FormValues) => {
     if (data.email && data.firstName) {
       setOpen(true);
+
+      const fakeUserId = "V1ZvMzEua2dZY18uajNlRnguLV9YZFNTLnA2Vm5i";
+      const url = `https://api.criaenvio.com/v1/contatos?chave=${fakeUserId}`;
+
+      try {
+        // Faz a requisição POST usando Axios
+        await axios.post(url, {
+          nome: data.firstName,
+          email: data.email,
+        });
+
+        // Opcional: você pode adicionar uma lógica para o que fazer após o sucesso
+        console.log("Dados enviados com sucesso!");
+      } catch (error) {
+        // Lida com erros de requisição
+        console.error("Erro ao enviar dados:", error);
+      }
     }
   };
 
