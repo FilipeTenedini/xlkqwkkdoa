@@ -37,18 +37,20 @@ const ConfirmDialog: React.FC<Props> = ({ open, setOpen }) => {
             e receba todos os avisos e materiais do curso! O WhatsApp será o meu
             principal meio de comunicação com você.
           </span>
-          <Button
-            type="submit"
-            className="w-full font-bold md:text-lg shadow-sm shadow-black/30 h-9 bg-primary"
-            variant={"inverted"}
-            onClick={() => {
-              window.open("https://joinz.app/grupoviptaisaurich", "_blank");
-              setValue(100)
-            }}
-          >
-            <FaWhatsapp className="mr-4" />
-            CONFIRMAR INSCRIÇÃO NO WHATSAPP
-          </Button>
+          <div className="w-full items-center justify-center fkex">
+            <Button
+              type="submit"
+              className="w-full font-bold text-xs md:text-lg shadow-sm shadow-black/30 h-9 bg-primary"
+              variant={"inverted"}
+              onClick={() => {
+                window.open("https://joinz.app/grupoviptaisaurich", "_blank");
+                setValue(100);
+              }}
+            >
+              <FaWhatsapp className="mr-4" />
+              CONFIRMAR INSCRIÇÃO NO WHATSAPP
+            </Button>
+          </div>
         </DialogContent>
       </Dialog>
     </div>
