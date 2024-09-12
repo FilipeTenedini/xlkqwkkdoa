@@ -5,9 +5,9 @@ import BannerText from "./BannerText";
 const Banner: React.FC = () => {
   return (
     <>
-      <div className="bg-gray-100 w-full h-full flex flex-row items-center justify-center text-black">
+      <div className="bg-gray-100 w-full h-full flex flex-row items-center justify-center text-black relative">
         <BannerImage />
-        <div className="hidden xl:flex md:w-[45%] flex-col w-full h-full p-1">
+        <div className="hidden 2xl:flex md:w-[45%] flex-col w-full h-full p-1">
           <div className="w-full h-full flex flex-col mt-3">
             <div className="w-full h-full lg:mb-2 flex flex-col items-center">
               <div className="text-2xl mb-1">Live de Lançamento Curso:</div>
@@ -21,7 +21,7 @@ const Banner: React.FC = () => {
           </div>
         </div>
       </div>
-      <div className="xl:hidden text-black block w-full bg-gray-100 py-4 px-4">
+      <div className="2xl:hidden text-black block w-full bg-gray-100 py-4 px-4">
         <BannerText />
         <BannerForm />
       </div>

@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const BannerImage: React.FC = () => {
   return (
-    <div className="relative w-full xl:w-[55%] h-full">
+    <div className="relative w-full 2xl:w-[55%] h-full">
       <div className="relative w-full h-full">
         <Image
           src={"/images/launch-ban.jpg"}
