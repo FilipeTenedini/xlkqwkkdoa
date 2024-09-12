@@ -1,3 +1,5 @@
+"use client";
+
 import BannerForm from "./BannerForm";
 import BannerImage from "./BannerImage";
 import BannerText from "./BannerText";
