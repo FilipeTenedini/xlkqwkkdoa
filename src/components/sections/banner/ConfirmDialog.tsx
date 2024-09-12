@@ -9,6 +9,7 @@ import {
   DialogDescription,
 } from "@/components/ui/Dialog";
 import { Progress } from "@/components/ui/Progress";
+import { useState } from "react";
 import { FaWhatsapp } from "react-icons/fa";
 
 interface Props {
@@ -17,6 +18,7 @@ interface Props {
 }
 
 const ConfirmDialog: React.FC<Props> = ({ open, setOpen }) => {
+  const [value, setValue] = useState(80);
   return (
     <div className="absolute w-full">
       <Dialog open={open} onOpenChange={() => setOpen(false)}>
@@ -26,7 +28,7 @@ const ConfirmDialog: React.FC<Props> = ({ open, setOpen }) => {
             <DialogDescription>
               Faltam apenas 1 passo para você garantir o acesso a live
             </DialogDescription>
-            <Progress value={80} />
+            <Progress value={value} />
           </DialogHeader>
           <span>
             <span className="font-semibold">
@@ -41,6 +43,7 @@ const ConfirmDialog: React.FC<Props> = ({ open, setOpen }) => {
             variant={"inverted"}
             onClick={() => {
               window.open("https://joinz.app/grupoviptaisaurich", "_blank");
+              setValue(100)
             }}
           >
             <FaWhatsapp className="mr-4" />
