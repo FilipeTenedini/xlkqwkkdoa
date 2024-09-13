@@ -9,7 +9,6 @@ import {
   DialogDescription,
 } from "@/components/ui/Dialog";
 import { Progress } from "@/components/ui/Progress";
-import { useState } from "react";
 import { FaWhatsapp } from "react-icons/fa";
 import { useRouter } from "next/navigation";
 
@@ -19,7 +18,6 @@ interface Props {
 }
 
 const ConfirmDialog: React.FC<Props> = ({ open, setOpen }) => {
-  const [value, setValue] = useState(80);
   const router = useRouter();
 
   const handleConfirmClick = () => {
@@ -27,7 +25,7 @@ const ConfirmDialog: React.FC<Props> = ({ open, setOpen }) => {
 
     window.open("https://joinz.app/grupoviptaisaurich", "_blank");
 
-    setValue(100);
+    setOpen(false);
   };
 
   return (
@@ -39,7 +37,7 @@ const ConfirmDialog: React.FC<Props> = ({ open, setOpen }) => {
             <DialogDescription>
               Faltam apenas 1 passo para você garantir o acesso à live.
             </DialogDescription>
-            <Progress value={value} />
+            <Progress value={80} />
           </DialogHeader>
           <span>
             <span className="font-semibold">
@@ -53,7 +51,7 @@ const ConfirmDialog: React.FC<Props> = ({ open, setOpen }) => {
               type="submit"
               className="w-full font-bold text-xs md:text-lg shadow-sm shadow-black/30 h-9 bg-primary"
               variant={"inverted"}
-              onClick={handleConfirmClick} // Usa a função de clique para remover o query e redirecionar
+              onClick={handleConfirmClick}
             >
               <FaWhatsapp className="mr-4" />
               CONFIRMAR INSCRIÇÃO NO WHATSAPP
