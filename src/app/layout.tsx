@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
-import MetaPixel from "../components/MetaPixel"
+import MetaPixel from "../pixels/MetaPixel"
+import GooglePixel from "../pixels/GooglePixel"
 import "./globals.css";
 
 const geistSans = localFont({
@@ -49,6 +50,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${cinzelSb.variable} ${cinzel.variable} ${geistMono.variable} bg-white antialiased`}
       >
         <MetaPixel />
+        <GooglePixel />
         {children}
       </body>
     </html>
