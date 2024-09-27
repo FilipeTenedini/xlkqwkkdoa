@@ -11,6 +11,7 @@ import {
 import { Progress } from "@/components/ui/Progress";
 import { FaWhatsapp } from "react-icons/fa";
 import { useRouter } from "next/navigation";
+import { useCallback } from "react";
 
 interface Props {
   open: boolean;
@@ -20,11 +21,23 @@ interface Props {
 const ConfirmDialog: React.FC<Props> = ({ open, setOpen }) => {
   const router = useRouter();
 
+  const isIOS = useCallback(() => {
+    const userAgent = typeof navigator !== "undefined" ? navigator.userAgent : "";
+    return /iPad|iPhone|iPod/.test(userAgent);
+  }, []);
+
+
   const handleConfirmClick = () => {
+    if (isIOS()) {
+      // Se for iOS, redireciona na mesma aba
+      window.location.href = "https://joinz.app/grupoviptaisaurich";
+    } else {
+      // Em outros sistemas, abre uma nova aba
+      window.open("https://joinz.app/grupoviptaisaurich", "_blank");
+    }
+
+    // Após abrir o link, redireciona a página atual
     router.replace(window.location.pathname);
-
-    window.open("https://joinz.app/grupoviptaisaurich", "_blank");
-
     setOpen(false);
   };
 
