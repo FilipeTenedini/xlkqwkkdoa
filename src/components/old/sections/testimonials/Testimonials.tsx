@@ -1,4 +1,4 @@
-import VideoSlider from "@/components/video-slider/VideoSlider";
+import VideoSlider from "@/components/old/video-slider/VideoSlider";
 
 const Testimonials: React.FC = () => {
   return (

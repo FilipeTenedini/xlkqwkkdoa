@@ -1,14 +1,14 @@
 "use client";
 
-import { Button } from "@/components/ui/Button";
+import { Button } from "@/components/old/ui/Button";
 import {
   DialogHeader,
   Dialog,
   DialogContent,
   DialogTitle,
   DialogDescription,
-} from "@/components/ui/Dialog";
-import { Progress } from "@/components/ui/Progress";
+} from "@/components/old/ui/Dialog";
+import { Progress } from "@/components/old/ui/Progress";
 import { FaWhatsapp } from "react-icons/fa";
 
 interface Props {

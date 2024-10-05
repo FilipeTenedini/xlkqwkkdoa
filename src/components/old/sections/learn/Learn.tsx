@@ -1,10 +1,10 @@
-import { Button } from "@/components/ui/Button";
+import { Button } from "@/components/old/ui/Button";
 import LearnInfos from "./LearnInfos/LearnInfos";
 import { useFormContext } from "@/context/FormContext";
 import scrollToTop from "@/app/utils/scroll-to-top";
 
 const Learn: React.FC = () => {
-  const { formContainerRef } = useFormContext(); 
+  const { formContainerRef } = useFormContext();
 
   return (
     <div className="bg-primary-t-1 py-3 w-full mb-4 flex flex-col items-center text-black">

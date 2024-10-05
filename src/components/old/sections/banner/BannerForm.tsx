@@ -2,8 +2,8 @@
 
 import React, { useState } from "react";
 import axios from "axios"; // Importa o Axios
-import { Button } from "@/components/ui/Button";
-import { Input } from "@/components/ui/Input";
+import { Button } from "@/components/old/ui/Button";
+import { Input } from "@/components/old/ui/Input";
 import { FormValues } from "@/context/types";
 import { useFormContext } from "@/context/FormContext";
 import ConfirmDialog from "./ConfirmDialog";

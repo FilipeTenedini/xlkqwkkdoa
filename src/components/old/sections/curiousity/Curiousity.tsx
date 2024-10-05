@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { Button } from "@/components/ui/Button";
+import { Button } from "@/components/old/ui/Button";
 import Carousel from "../carousel/Carousel";
 import { useFormContext } from "@/context/FormContext"; // Importa o hook do contexto
 import scrollToTop from "@/app/utils/scroll-to-top"; // Importa a função de rolar para o formulário
