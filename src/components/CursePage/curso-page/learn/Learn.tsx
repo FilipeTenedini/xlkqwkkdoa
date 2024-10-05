@@ -8,7 +8,7 @@ const Learn: React.FC = () => {
       <h1 className="font-bold mb-2 text-center w-full px-4 text-2xl md:text-4xl">
         O que você vai aprender no curso?
       </h1>
-      <h3 className="font-bold text-center w-full px-4 text-2xl md:text-2xl mb-4">
+      <h3 className="font-bold text-center w-full px-4 text-xl md:text-2xl mb-4">
         Neste curso você vai aprender:
       </h3>
       <LearnInfos />

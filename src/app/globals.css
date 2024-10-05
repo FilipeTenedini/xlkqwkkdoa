@@ -8,6 +8,8 @@
   --foreground: #171717;
   --font-cinzel: 'Cinzel', serif;
   --font-cinzel-sb: 'Cinzel', serif;
+  --font-poppins: 'Poppins', Sans-serif;
+  --font-poppins-sb: 'Poppins', Sans-serif;
 }
 
 @media (prefers-color-scheme: dark) {

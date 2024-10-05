@@ -27,6 +27,18 @@ const cinzelSb = localFont({
   weight: "400 700",
 });
 
+const poppins = localFont({
+  src: "./fonts/Poppins-Regular.ttf",
+  variable: "--font-Poppins",
+  weight: "400 700",
+});
+
+const poppinsSb = localFont({
+  src: "./fonts/Poppins-SemiBold.ttf",
+  variable: "--font-Poppins-sb",
+  weight: "400 700",
+});
+
 export const metadata: Metadata = {
   title: "Descomplicando Lentes de Resina",
   description: "Taís Aurich",
@@ -47,7 +59,7 @@ export default function RootLayout({
         />
       </head>
       <body
-        className={`${geistSans.variable} ${cinzelSb.variable} ${cinzel.variable} ${geistMono.variable} bg-white antialiased`}
+        className={`${geistSans.variable} ${cinzelSb.variable} ${cinzel.variable} ${poppinsSb.variable} ${poppins.variable} ${geistMono.variable} bg-white antialiased`}
       >
         <MetaPixel />
         <GooglePixel />
