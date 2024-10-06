@@ -4,7 +4,7 @@ import VideoSlider from "./video-slider/VideoSlider";
 
 const AboutStudents: React.FC = () => {
   return (
-    <div className="bg-primary w-full pt-1 flex items-center flex-col">
+    <div className="bg-primary w-full pt-1 flex items-center flex-col pb-4">
       <div className="w-full text-center text-xl md:text-3xl mt-2 mb-4">
         Depoimentos e <span>histórias de sucesso</span>
       </div>
