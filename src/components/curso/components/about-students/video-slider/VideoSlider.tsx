@@ -6,24 +6,25 @@ import { GrCaretNext } from "react-icons/gr";
 const videos = [
   {
     src: "/videos/one.mp4",
-    poster: "",
     type: "video/mp4",
+    posterTime: 5, // Tempo em segundos para capturar o poster
   },
   {
     src: "/videos/two.mp4",
-    poster: "",
     type: "video/mp4",
+    posterTime: 10,
   },
   {
     src: "/videos/four.mp4",
-    poster: "",
     type: "video/mp4",
+    posterTime: 8,
   },
 ];
 
 export default function VideoSlider() {
-  const videoRef = useRef<HTMLVideoElement>(null);
+  const videoRefs = useRef<HTMLVideoElement[]>([]);
   const [currentVideo, setCurrentVideo] = useState(0);
+  const [posters, setPosters] = useState<string[]>(Array(videos.length).fill(""));
 
   const handlePrev = () => {
     setCurrentVideo((prev) => (prev === 0 ? videos.length - 1 : prev - 1));
@@ -33,14 +34,47 @@ export default function VideoSlider() {
     setCurrentVideo((prev) => (prev === videos.length - 1 ? 0 : prev + 1));
   };
 
-  const handleVideoChange = () => {
-    if (videoRef.current) {
-      videoRef.current.load();
-    }
+  const capturePoster = (videoElement: HTMLVideoElement, index: number, time: number) => {
+    videoElement.currentTime = time;
+
+    videoElement.addEventListener("seeked", function onSeeked() {
+      const canvas = document.createElement("canvas");
+      canvas.width = videoElement.videoWidth;
+      canvas.height = videoElement.videoHeight;
+
+      const ctx = canvas.getContext("2d");
+      if (ctx) {
+        ctx.drawImage(videoElement, 0, 0, canvas.width, canvas.height);
+        const imageUrl = canvas.toDataURL("image/png");
+
+        // Atualiza o estado de posters apenas se ainda não foi capturado
+        setPosters((prevPosters) => {
+          const newPosters = [...prevPosters];
+          if (!newPosters[index]) {
+            newPosters[index] = imageUrl;
+          }
+          return newPosters;
+        });
+      }
+
+      videoElement.removeEventListener("seeked", onSeeked);
+    });
+  };
+
+  const capturePostersForAllVideos = () => {
+    videos.forEach((video, index) => {
+      if (videoRefs.current[index] && !posters[index]) {
+        capturePoster(videoRefs.current[index], index, video.posterTime); // Captura o poster do vídeo
+      }
+    });
   };
 
   useEffect(() => {
-    handleVideoChange();
+    capturePostersForAllVideos();
+  }, []);
+
+  useEffect(() => {
+    capturePostersForAllVideos();
   }, [currentVideo]);
 
   return (
@@ -55,12 +89,14 @@ export default function VideoSlider() {
           >
             <div className="relative flex items-center justify-center">
               <video
-                ref={videoRef}
+              // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+              // @ts-ignore
+                ref={(el) => (videoRefs.current[index] = el!)}
                 controls
                 playsInline
                 autoPlay={false}
                 muted
-                poster={video.poster}
+                poster={posters[index]}
                 className="h-[60vh] max-h-[60vh] object-cover rounded-lg border-2 border-gray-300"
                 onEnded={handleNext}
               >
@@ -68,7 +104,6 @@ export default function VideoSlider() {
                 Your browser does not support the video tag.
               </video>
 
-              {/* Botões de navegação */}
               <button
                 onClick={handlePrev}
                 className="absolute lg:hidden left-0 top-1/2 transform -translate-y-1/2 bg-black rounded-full bg-opacity-50 text-white p-2 z-10"
@@ -83,7 +118,6 @@ export default function VideoSlider() {
                 <GrCaretNext />
               </button>
 
-              {/* Bolinhas de navegação visíveis apenas em telas pequenas */}
               <div className="flex justify-center rounded-full space-x-2 mt-2 lg:hidden absolute bottom-[-9px] left-1/2 transform -translate-x-1/2 backdrop-blur-sm bg-white bg-opacity-30 p-2">
                 {videos.map((_, index) => (
                   <button
