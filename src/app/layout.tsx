@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
-import MetaPixel from "../pixels/MetaPixel"
-import GooglePixel from "../pixels/GooglePixel"
+import MetaPixel from "../pixels/MetaPixel";
+import GooglePixel from "../pixels/GooglePixel";
 import "./globals.css";
 
 const geistSans = localFont({
