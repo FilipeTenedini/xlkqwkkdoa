@@ -40,14 +40,16 @@ const AboutInfosItem: React.FC<Props> = ({ text, icon }) => {
   return (
     <motion.li
       ref={itemRef}
-      className="text-black mb-3 bg-primary-t-4 rounded-full min-h-20 flex items-center"
+      className="text-black mb-3 bg-primary-t-4 p-1 rounded-full min-h-20 flex items-center"
       initial={{ opacity: 0, y: 50 }}
       animate={{ opacity: isVisible ? 1 : 0, y: isVisible ? 0 : 50 }}
       transition={{ duration: 0.6, ease: "easeOut" }}
     >
       <div className="w-full px-4">
         <div className="flex md:text-lg">
-          <div className="flex items-center justify-center w-[28px] mt-0.5 md:mt-1">{icon}</div>
+          <div className="flex items-center justify-center w-[28px] mt-0.5 md:mt-1">
+            {icon}
+          </div>
           {text}
         </div>
       </div>

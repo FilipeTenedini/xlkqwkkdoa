@@ -1,6 +1,7 @@
 import Header from "./components/header/Header";
 import VideoPlayer from "./components/video-player/VideoPlayer";
 import AboutCourse from "./components/about-course/AboutCourse";
+import AboutStudents from "./components/about-students/AboutStudents";
 
 const CursoMain: React.FC = () => {
   return (
@@ -20,6 +21,7 @@ const CursoMain: React.FC = () => {
       </div>
       <VideoPlayer />
       <AboutCourse />
+      <AboutStudents />
     </>
   );
 };
