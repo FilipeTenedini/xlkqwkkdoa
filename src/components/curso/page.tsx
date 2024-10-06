@@ -2,6 +2,7 @@ import Header from "./components/header/Header";
 import VideoPlayer from "./components/video-player/VideoPlayer";
 import AboutCourse from "./components/about-course/AboutCourse";
 import AboutStudents from "./components/about-students/AboutStudents";
+import Faq from "./components/faq/Faq";
 
 const CursoMain: React.FC = () => {
   return (
@@ -22,6 +23,7 @@ const CursoMain: React.FC = () => {
       <VideoPlayer />
       <AboutCourse />
       <AboutStudents />
+      <Faq />
     </>
   );
 };
