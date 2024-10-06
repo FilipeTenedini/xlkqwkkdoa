@@ -30,8 +30,8 @@ const results: {
 const AboutInfos: React.FC = () => {
   return (
     <ul className="px-4">
-      {results.map((item) => (
-        <AboutInfosItem key={item.text} text={item.text} icon={item.icon} />
+      {results.map((item, idx) => (
+        <AboutInfosItem key={`${item.text}-${idx}`} text={item.text} icon={item.icon} />
       ))}
     </ul>
   );
