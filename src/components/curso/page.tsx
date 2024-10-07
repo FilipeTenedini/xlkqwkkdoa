@@ -15,9 +15,11 @@ const CursoMain: React.FC = () => {
       <VideoPlayer />
       <AboutCourse />
       <AboutStudents />
-      <CourseNameSlider />
-      <AboutTeacher />
+      <div className="w-full border border-bottom border-top border-black">
+        <CourseNameSlider />
+      </div>
       <Faq />
+      <AboutTeacher />
       <Footer />
     </>
   );

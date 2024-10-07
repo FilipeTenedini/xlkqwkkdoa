@@ -7,15 +7,15 @@ import {
 
 const Faq: React.FC = () => {
   return (
-    <div className="w-full bg-primary flex flex-col items-center text-black">
+    <div className="w-full bg-white flex flex-col items-center text-black">
       <div className="w-full flex flex-col items-center p-10 gap-y-4">
-        <h1 className="font-bold mb-3 text-center w-full px-4 text-2xl md:text-4xl md:mb-5 text-white">
+        <h1 className="font-bold mb-3 text-center w-full px-4 text-2xl md:text-4xl md:mb-5 text-black">
           Dúvidas Frequentes
         </h1>
         <Accordion
           type="single"
           collapsible={true}
-          className="bg-white rounded-2xl px-2 w-full max-w-[700px]"
+          className="bg-primary rounded-2xl px-2 w-full max-w-[700px] text-white"
         >
           <AccordionItem value="anyways" className="shadow-none px-0">
             <AccordionTrigger className="pl-2 font-semibold relative shadow-none">
@@ -31,7 +31,7 @@ const Faq: React.FC = () => {
         <Accordion
           type="single"
           collapsible={true}
-          className="bg-white rounded-2xl px-2 w-full max-w-[700px]"
+          className="bg-primary rounded-2xl px-2 w-full max-w-[700px] text-white"
         >
           <AccordionItem value="anyways" className="shadow-none px-0">
             <AccordionTrigger className="pl-2 font-semibold relative shadow-none">
@@ -47,7 +47,7 @@ const Faq: React.FC = () => {
         <Accordion
           type="single"
           collapsible={true}
-          className="bg-white rounded-2xl px-2 w-full max-w-[700px]"
+          className="bg-primary rounded-2xl px-2 w-full max-w-[700px] text-white"
         >
           <AccordionItem value="anyways" className="shadow-none px-0">
             <AccordionTrigger className="pl-2 font-semibold relative shadow-none">
