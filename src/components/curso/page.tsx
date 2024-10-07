@@ -5,6 +5,7 @@ import AboutStudents from "./components/about-students/AboutStudents";
 import Faq from "./components/faq/Faq";
 import CourseNameSlider from "./components/course-name-slider/CourseNameSlider";
 import AboutTeacher from "./components/about-teacher/AboutTeacher";
+import Footer from "./components/footer/Footer";
 
 const CursoMain: React.FC = () => {
   return (
@@ -17,6 +18,7 @@ const CursoMain: React.FC = () => {
       <CourseNameSlider />
       <AboutTeacher />
       <Faq />
+      <Footer />
     </>
   );
 };

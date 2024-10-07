@@ -47,7 +47,6 @@ export default function VideoSlider() {
         ctx.drawImage(videoElement, 0, 0, canvas.width, canvas.height);
         const imageUrl = canvas.toDataURL("image/png");
 
-        // Atualiza o estado de posters apenas se ainda não foi capturado
         setPosters((prevPosters) => {
           const newPosters = [...prevPosters];
           if (!newPosters[index]) {

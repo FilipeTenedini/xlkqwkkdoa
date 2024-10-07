@@ -1,6 +1,6 @@
 const Header: React.FC = () => {
   return (
-    <div className="w-full bg-black flex flex-col items-center justify-center px-3 md:px-12 py-6">
+    <div className="w-full bg-black flex flex-col items-center justify-center px-3 md:px-12 pb-8">
       <div className="w-[230px] flex justify-center items-center">
         <img
           src="/images/logo-redonda.png"
@@ -12,7 +12,7 @@ const Header: React.FC = () => {
         />
       </div>
       <div className="text-2xl font-semibold mb-6">CONHEÇA A TAIS AURICH</div>
-      <span className="text-lg text-white lg:max-w-[750px]">
+      <span className="text-lg text-white lg:max-w-[750px] px-2">
         &nbsp;&nbsp;Formada pela UFRGS, especialista em prótese dentária e com
         mais de 20 anos de experiência.
         <br />
