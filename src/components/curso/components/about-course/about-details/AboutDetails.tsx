@@ -1,3 +1,5 @@
+"use client";
+
 import AboutDetailsItem from "./AboutDetailsItem";
 
 const results: {

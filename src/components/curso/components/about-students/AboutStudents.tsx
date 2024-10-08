@@ -1,6 +1,10 @@
+"use client";
+
 import { Button } from "@/components/old/ui/Button";
 import { MdKeyboardDoubleArrowRight } from "react-icons/md";
-import VideoSlider from "./video-slider/VideoSlider";
+// import VideoSlider from "./video-slider/VideoSlider";
+import { lazy } from "react";
+const VideoSlider = lazy(() => import("./video-slider/VideoSlider"));
 
 const AboutStudents: React.FC = () => {
   return (

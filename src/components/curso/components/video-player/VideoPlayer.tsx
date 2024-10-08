@@ -1,10 +1,14 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useCallback } from "react";
 import Message from "./message/Message";
 
 const VideoPlayer: React.FC = () => {
   const [isPlaying, setIsPlaying] = useState(false);
+
+  const handlePlay = useCallback(() => {
+    setIsPlaying(true);
+  }, []);
 
   return (
     <>
@@ -18,7 +22,7 @@ const VideoPlayer: React.FC = () => {
           className={`w-full h-full ${
             isPlaying ? "object-contain" : "object-cover"
           }`}
-          onPlay={() => setIsPlaying(true)}
+          onPlay={handlePlay}
         >
           <source src={"/videos/four.mp4"} type={"video/mp4"} />
           Your browser does not support the video tag.

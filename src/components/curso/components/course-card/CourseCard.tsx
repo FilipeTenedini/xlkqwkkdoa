@@ -1,4 +1,7 @@
-import { useEffect, useRef, useState } from "react";
+"use client";
+
+/* eslint-disable @typescript-eslint/ban-types */
+import { useEffect, useRef, useState, useCallback, useMemo } from "react";
 import { motion } from "framer-motion";
 import { Button } from "@/components/old/ui/Button";
 import { MdKeyboardDoubleArrowRight } from "react-icons/md";
@@ -17,7 +20,7 @@ const CourseCard: React.FC = () => {
           }
         });
       },
-      { threshold: 0.1 } // O card será considerado visível quando 10% dele aparecer na tela
+      { threshold: 0.1 }
     );
 
     if (cardRef.current) {
@@ -30,6 +33,25 @@ const CourseCard: React.FC = () => {
       }
     };
   }, []);
+
+  // Debounce function
+  const debounce = useMemo(() => {
+    let timeout: NodeJS.Timeout;
+    return (func: Function, delay: number) => {
+      return (...args: unknown[]) => {
+        clearTimeout(timeout);
+        timeout = setTimeout(() => func.apply(this, args), delay);
+      };
+    };
+  }, []);
+
+  const handleEnroll = useCallback(
+    debounce((() => {
+      // Código para inscrever-se
+      console.log("Inscrição realizada!");
+    }), 300),
+    [debounce]
+  );
 
   return (
     <motion.div
@@ -50,6 +72,7 @@ const CourseCard: React.FC = () => {
           </div>
         </div>
         <Button
+          onClick={handleEnroll}
           className="w-full mt-6 mb-2 rounded-full font-bold md:text-lg md:mb-1 max-w-[300px] shadow-sm shadow-black/30 md:h-11 bg-primary-t-8 text-white"
           variant={"inverted"}
         >

@@ -1,3 +1,5 @@
+"use client";
+
 import { Button } from "@/components/old/ui/Button";
 import { MdKeyboardDoubleArrowRight } from "react-icons/md";
 import AboutInfosItem from "./AboutInfosItem";

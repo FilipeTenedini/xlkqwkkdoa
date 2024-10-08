@@ -1,3 +1,5 @@
+"use client";
+
 import AboutDetails from "./about-details/AboutDetails";
 import AboutInfos from "./about-infos/AboutInfos";
 

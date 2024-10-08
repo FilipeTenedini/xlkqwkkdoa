@@ -1,3 +1,5 @@
+"use client";
+
 const Header: React.FC = () => {
   return (
     <div className="w-full bg-black flex flex-col items-center justify-center px-3 md:px-12 pb-8">
