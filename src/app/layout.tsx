@@ -29,13 +29,13 @@ const cinzelSb = localFont({
 
 const poppins = localFont({
   src: "./fonts/Poppins-Regular.ttf",
-  variable: "--font-Poppins",
+  variable: "--font-poppins",
   weight: "400 700",
 });
 
 const poppinsSb = localFont({
   src: "./fonts/Poppins-SemiBold.ttf",
-  variable: "--font-Poppins-sb",
+  variable: "--font-poppins-sb",
   weight: "400 700",
 });
 
