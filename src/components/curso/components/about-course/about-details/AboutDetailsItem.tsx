@@ -41,7 +41,7 @@ const AboutDetailsItem: React.FC<Props> = ({ text, info }) => {
   return (
     <motion.li
       ref={itemRef}
-      className="text-black mb-3 bg-primary-t-4 min-w-[180px] w-[80%] h-[120px] rounded-xl min-h-20 flex items-center"
+      className="text-black mb-3 bg-primary-t-4 min-w-[140px] md:min-w-[180px] w-[80%] h-[120px] rounded-xl min-h-20 flex items-center"
       initial={{ opacity: 0, y: 50 }}
       animate={{ opacity: isVisible ? 1 : 0, x: isVisible ? 0 : 50 }}
       transition={{ duration: 0.6, ease: "easeOut" }}

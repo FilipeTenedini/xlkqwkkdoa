@@ -14,7 +14,7 @@ const AboutStudents: React.FC = () => {
       </div>
       <VideoSlider />
       <Button
-        className="mt-6 mb-2 rounded-full w-[95%] max-w-[650px] font-bold md:text-lg md:mb-1 shadow-sm shadow-black/30 md:h-[55px] bg-primary-t-8 text-white"
+        className="mt-6 mb-2 rounded-full w-[95%] max-w-[650px] font-bold md:text-lg md:mb-1 shadow-sm shadow-black/30 md:h-[55px] bg-white text-primary"
         variant={"inverted"}
       >
         <div className="flex items-center w-full h-full justify-center relative">

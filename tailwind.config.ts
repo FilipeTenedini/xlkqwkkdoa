@@ -12,12 +12,12 @@ const config: Config = {
       colors: {
         background: 'hsl(var(--background))',
         foreground: 'hsl(var(--foreground))',
-        primary: "#b6ab7d",
-        'primary-t-1': 'rgba(163, 141, 109, 0.1)',
-        'primary-t-4': 'rgba(163, 141, 109, 0.4)',
-        'primary-t-5': 'rgba(163, 141, 109, 0.5)',
-        'primary-t-6': 'rgba(163, 141, 109, 0.6)',
-        'primary-t-8': 'rgba(163, 141, 109, 0.8)',
+        primary: "#AAA8A9",
+          'primary-t-1': 'rgba(170, 168, 169, 0.1)', // 10% de opacidade
+          'primary-t-4': 'rgba(170, 168, 169, 0.4)', // 40% de opacidade
+          'primary-t-5': 'rgba(170, 168, 169, 0.5)', // 50% de opacidade
+          'primary-t-6': 'rgba(170, 168, 169, 0.6)', // 60% de opacidade
+          'primary-t-8': 'rgba(170, 168, 169, 0.8)', // 80% de opacidade
         card: {
           DEFAULT: 'hsl(var(--card))',
           foreground: 'hsl(var(--card-foreground))'
@@ -85,7 +85,7 @@ const config: Config = {
             transform: "translateX(0%)",
           },
           "100%": {
-            transform: "translateX(-100%)",
+            transform: "translateX(-50%)",
           },
         },
       },

@@ -7,17 +7,17 @@ const videos = [
   {
     src: "/videos/one.mp4",
     type: "video/mp4",
-    poster: "/images/logo-redonda.png"
+    poster: "/images/video-poster-1.png"
   },
   {
     src: "/videos/two.mp4",
     type: "video/mp4",
-   poster: "/images/logo-redonda.png"
+    poster: "/images/video-poster-2.png"
   },
   {
     src: "/videos/four.mp4",
     type: "video/mp4",
-    poster: "/images/logo-redonda.png"
+    poster: "/images/video-poster-3.png"
   },
 ];
 

@@ -2,11 +2,11 @@
 
 const Header: React.FC = () => {
   return (
-    <div className="w-full bg-black flex flex-col items-center justify-center px-3 md:px-12 pb-8">
-      <div className="w-[230px] flex justify-center items-center">
+    <div className="w-full bg-black flex flex-col items-center justify-center px-3 pt-3 md:px-12 pb-8">
+      <div className="w-[230px] lg:mb-4 flex justify-center items-center">
         <img
-          src="/images/logo-redonda.png"
-          className="mb-8 w-[180px] h-[260px] lg:w-[950px] lg:h-[320px] ml-[-10px] rounded-full"
+          src="/images/new-logo-redonda.png"
+          className="mb-8 w-[180px] h-[150px] lg:h-[200px] lg:w-[320px] ml-[-10px] rounded-full"
         />
         <img
           src="/images/image.webp"

@@ -1,5 +1,5 @@
 "use client";
-import Header from "./components/header/Header";
+// import Header from "./components/header/Header";
 
 import AboutCourse from "./components/about-course/AboutCourse";
 import Faq from "./components/faq/Faq";
@@ -8,17 +8,21 @@ import AboutTeacher from "./components/about-teacher/AboutTeacher";
 import Footer from "./components/footer/Footer";
 import CourseCard from "./components/course-card/CourseCard";
 import { lazy } from "react";
+import Banner from "./components/banner/Banner";
+import ImageSlider from "./components/image-slider/ImageSlider";
 
-
-const VideoPlayer = lazy(() => import("./components/video-player/VideoPlayer"));
-const AboutStudents = lazy(() => import("./components/about-students/AboutStudents"));
+// const VideoPlayer = lazy(() => import("./components/video-player/VideoPlayer"));
+const AboutStudents = lazy(
+  () => import("./components/about-students/AboutStudents")
+);
 
 const CursoMain: React.FC = () => {
   return (
     <>
-      <Header />
-      <CourseNameSlider />
-      <VideoPlayer />
+      {/* <Header /> */}
+      {/* <CourseNameSlider /> */}
+      {/* <VideoPlayer /> */}
+      <Banner />
       <AboutCourse />
       <CourseCard />
       <AboutStudents />
@@ -26,6 +30,7 @@ const CursoMain: React.FC = () => {
         <CourseNameSlider />
       </div>
       <Faq />
+      <ImageSlider />
       <AboutTeacher />
       <Footer />
     </>
