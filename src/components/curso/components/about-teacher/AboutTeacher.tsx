@@ -13,7 +13,7 @@ const Header: React.FC = () => {
           className="rounded-3xl h-[120px] lg:h-[250px]"
         />
       </div>
-      <div className="text-2xl font-semibold mb-6">CONHEÇA A TAIS AURICH</div>
+      <div className="text-2xl text-white font-semibold mb-6">CONHEÇA A TAIS AURICH</div>
       <span className="text-lg text-white lg:max-w-[750px] px-2">
         &nbsp;&nbsp;Formada pela UFRGS, especialista em prótese dentária e com
         mais de 20 anos de experiência.
