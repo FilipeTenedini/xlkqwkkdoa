@@ -10,6 +10,7 @@ import CourseCard from "./components/course-card/CourseCard";
 import { lazy } from "react";
 import Banner from "./components/banner/Banner";
 import ImageSlider from "./components/image-slider/ImageSlider";
+import CourseConfigs from "./components/course-configs/CourseConfigs";
 
 // const VideoPlayer = lazy(() => import("./components/video-player/VideoPlayer"));
 const AboutStudents = lazy(
@@ -29,6 +30,7 @@ const CursoMain: React.FC = () => {
       <div className="w-full border border-bottom border-top border-black">
         <CourseNameSlider />
       </div>
+      <CourseConfigs />
       <Faq />
       <ImageSlider />
       <AboutTeacher />
