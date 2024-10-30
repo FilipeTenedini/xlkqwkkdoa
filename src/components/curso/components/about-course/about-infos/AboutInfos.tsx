@@ -85,7 +85,7 @@ function CourseContent() {
       <img
         src="/images/content_logo.png"
         alt="Logo do Conteúdo do Curso"
-        className="mb-4 w-[350px] md:w-[600px] z-20 absolute left-0 top-[-50px] md:top-[-120px]"
+        className="mb-4 w-[320px] md:w-[600px] z-20 absolute left-0 top-[-50px] md:top-[-120px]"
       />
 
       <ul className="px-4 z-20 relative">

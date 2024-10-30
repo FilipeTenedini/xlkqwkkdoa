@@ -61,7 +61,7 @@ const CourseCard: React.FC = () => {
       animate={{ opacity: isVisible ? 1 : 0, y: isVisible ? 0 : 100 }}
       transition={{ duration: 0.6, ease: "easeOut" }}
     >
-      <div className="border min-w-[320px] max-w-[800px] border-primary bg-primary-t-1 rounded-xl p-4 flex flex-col items-center justify-center">
+      <div className="border min-w-[300px] max-w-[800px] border-primary bg-primary-t-1 rounded-xl p-4 flex flex-col items-center justify-center">
         <div className="bg-black text-white text-center rounded-xl px-4 mb-4">
           Descomplicando Lentes de Resina
         </div>
