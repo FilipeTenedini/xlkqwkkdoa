@@ -2,7 +2,7 @@
 
 const Header: React.FC = () => {
   return (
-    <div className="w-full bg-black flex flex-col items-center justify-center px-3 pt-3 md:px-12 pb-8">
+    <div className="w-full bg-primary flex flex-col items-center justify-center px-3 pt-3 md:px-12 pb-8">
       <div className="w-[230px] lg:mb-4 flex justify-center items-center">
         <img
           src="/images/new-logo-redonda.png"
