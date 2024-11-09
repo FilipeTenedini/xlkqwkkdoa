@@ -14,7 +14,7 @@ const BannerImage: React.FC = () => {
         <div className="absolute bottom-10 left-6 right-6">
           <div className="absolute left-[30%] translate-x-[-50%] -bottom-7 sm:bottom-1 md:bottom-5 lg:bottom-13 xl:bottom-4">
             <h2 className="text-md text-xl sm:text-2xl lg:text-4xl text-white font-bold font-cinzel p-4">
-              03/10 às 20:00
+              12/12 às 20:00
             </h2>
           </div>
         </div>

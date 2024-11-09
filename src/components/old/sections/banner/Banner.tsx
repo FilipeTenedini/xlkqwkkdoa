@@ -16,7 +16,7 @@ const Banner: React.FC = () => {
               <span className="font-cinzelSb text-center text-3xl font-semibold">
                 DESCOMPLICANDO LENTES <br /> DE RESINA
               </span>
-              <div className="text-xl mb-2">03/10 às 20:00</div>
+              <div className="text-xl mb-2">12/12 às 20:00</div>
             </div>
             <BannerText />
             <BannerForm />
