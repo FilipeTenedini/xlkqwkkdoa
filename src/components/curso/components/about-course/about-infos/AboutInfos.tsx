@@ -101,6 +101,7 @@ function CourseContent() {
       <Button
         className="w-full md:max-w-[350px] mt-4 mb-2 rounded-full max-w-[95%] font-bold text-lg md:mb-1 shadow-sm shadow-black/30 h-[55px] bg-primary text-white z-20 relative"
         variant={"inverted"}
+        onClick={() => window.open("https://go.hotmart.com/W95844791D", "_blank")}
       >
         <div className="flex items-center w-full h-full justify-center relative">
           Eu quero aprender!
