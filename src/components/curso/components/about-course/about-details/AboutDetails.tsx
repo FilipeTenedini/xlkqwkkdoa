@@ -7,20 +7,20 @@ const results: {
   info: string;
 }[] = [
   {
-    text: "técnicas ensinadas",
-    info: "25"
+    text: "módulos",
+    info: "3"
+  },
+  {
+    text: "técnica exclusiva e descomplicada",
+    info: "1"
   },
   {
     text: "aulas",
     info: "4"
   },
   {
-    text: "de curso",
-    info: "19h"
-  },
-  {
-    text: "demonstrações práticas",
-    info: "31"
+    text: "demonstração de caso clínico",
+    info: "1"
   },
 ];
 

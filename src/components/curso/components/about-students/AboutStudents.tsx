@@ -16,6 +16,7 @@ const AboutStudents: React.FC = () => {
       <Button
         className="mt-6 mb-2 rounded-full w-[95%] max-w-[650px] font-bold md:text-lg md:mb-1 shadow-sm shadow-black/30 md:h-[55px] bg-white text-primary"
         variant={"inverted"}
+        onClick={() => window.open("https://go.hotmart.com/W95844791D", "_blank")}
       >
         <div className="flex items-center w-full h-full justify-center relative">
           Quero fazer sucesso!

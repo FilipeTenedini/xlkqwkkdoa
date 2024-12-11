@@ -47,6 +47,7 @@ const CourseCard: React.FC = () => {
 
   const handleEnroll = useCallback(
     debounce((() => {
+     window.open("https://go.hotmart.com/W95844791D", "_blank")
       // Código para inscrever-se
       console.log("Inscrição realizada!");
     }), 300),
@@ -68,7 +69,7 @@ const CourseCard: React.FC = () => {
         <div className="text-black">
           <div className="w-full text-center">
             <span className="text-lg">8x</span>{" "}
-            <span className="text-2xl font-poppinsSb">R$ 340,17</span>
+            <span className="text-2xl font-poppinsSb">R$ 232,40</span>
           </div>
         </div>
         <Button

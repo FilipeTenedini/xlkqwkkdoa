@@ -62,8 +62,8 @@ const AboutInfos: React.FC = () => {
               o momento.
             </div>
           </div>
-          <Button className="mt-6 mb-2 rounded-full w-[95%] max-w-[350px] text-lg md:mb-1 shadow-sm shadow-black/30 md:h-[55px] bg-white text-primary">
-            INSCREVA-SE AGORA
+          <Button onClick={() => window.open("https://go.hotmart.com/W95844791D", "_blank")} className="mt-6 mb-2 rounded-full w-[95%] max-w-[350px] text-lg md:mb-1 shadow-sm shadow-black/30 md:h-[55px] bg-white text-primary">
+              INSCREVA-SE AGORA
           </Button>
         </div>
       </div>
