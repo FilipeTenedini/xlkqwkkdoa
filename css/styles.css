@@ -116,6 +116,26 @@
     background-color: rgba(255, 255, 255, 0.2);
 }
 
+/* Mobile adjustments */
+@media (max-width: 767px) {
+    .sticky-header .container {
+        padding: 0 0.75rem;
+    }
+
+    .logo-text {
+        font-size: 1.125rem;
+    }
+
+    .btn {
+        padding: 0.375rem 1rem;
+        font-size: 0.875rem;
+    }
+
+    .sticky-header .btn {
+        white-space: nowrap;
+    }
+}
+
 /* Hero Section */
 .hero-section {
     position: relative;
