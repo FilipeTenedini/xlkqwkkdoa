@@ -158,8 +158,8 @@
     left: 0;
     width: 0;
     height: 2px;
-    background-color: var(--azul-medio);
-    transition: width var(--transition-normal);
+    background-color: #0D6EFD;
+    transition: width 250ms ease;
 }
 
 .nav-link:hover::after {
@@ -167,7 +167,7 @@
 }
 
 .service-card {
-    transition: transform var(--transition-normal);
+    transition: transform 250ms ease;
 }
 
 .service-card:hover {
@@ -175,7 +175,7 @@
 }
 
 .btn {
-    transition: transform var(--transition-fast);
+    transition: transform 150ms ease;
 }
 
 .btn:active {
@@ -193,9 +193,9 @@
     display: inline-block;
     width: 2rem;
     height: 2rem;
-    border: 3px solid var(--border-color);
+    border: 3px solid #E5E7EB;
     border-radius: 50%;
-    border-top-color: var(--azul-medio);
+    border-top-color: #0D6EFD;
     animation: spin 1s linear infinite;
 }
 
