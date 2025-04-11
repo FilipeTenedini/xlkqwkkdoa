@@ -71,32 +71,23 @@ window.addEventListener('scroll', () => {
 // Formulário de contato
 const contactForm = document.querySelector('.contact-form');
 if (contactForm) {
-    contactForm.addEventListener('submit', async (e) => {
+    contactForm.addEventListener('submit', (e) => {
         e.preventDefault();
         
-        const submitButton = contactForm.querySelector('button[type="submit"]');
-        const originalText = submitButton.textContent;
+        // Obter apenas a mensagem do formulário
+        const message = contactForm.querySelector('textarea').value;
         
-        // Adicionar loading
-        submitButton.disabled = true;
-        submitButton.innerHTML = '<span class="loading"></span>';
+        // Número do WhatsApp da empresa
+        const phoneNumber = '+554837213620';
         
-        // Simular envio do formulário
-        try {
-            await new Promise(resolve => setTimeout(resolve, 1500));
-            
-            // Limpar formulário
-            contactForm.reset();
-            
-            // Mostrar mensagem de sucesso
-            alert('Mensagem enviada com sucesso!');
-        } catch (error) {
-            alert('Erro ao enviar mensagem. Por favor, tente novamente.');
-        } finally {
-            // Restaurar botão
-            submitButton.disabled = false;
-            submitButton.textContent = originalText;
-        }
+        // Criar link do WhatsApp com apenas a mensagem
+        const whatsappLink = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+        
+        // Abrir WhatsApp em nova aba
+        window.open(whatsappLink, '_blank');
+        
+        // Limpar formulário
+        contactForm.reset();
     });
 }
 
@@ -107,9 +98,9 @@ menuButton.innerHTML = '<i data-lucide="menu"></i>';
 menuButton.setAttribute('aria-label', 'Menu');
 
 const nav = document.querySelector('.main-nav');
-const header = document.querySelector('.sticky-header .container');
+const headerContainer = document.querySelector('.sticky-header .container');
 
-header.insertBefore(menuButton, nav);
+headerContainer.insertBefore(menuButton, nav);
 
 menuButton.addEventListener('click', () => {
     nav.classList.toggle('active');
